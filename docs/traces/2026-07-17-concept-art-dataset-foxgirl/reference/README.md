@@ -5,11 +5,11 @@
 three atomic features for the v3.1 dataset extension, per the
 one-delta-per-feature principle:
 
-| Feature | Delta vs. v3 baseline |
-|---|---|
-| `short_dark_hair/` | short dark-brown bob hair (replaces long orange hair) |
+| Feature                | Delta vs. v3 baseline                                                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `short_dark_hair/`     | short dark-brown bob hair (replaces long orange hair)                                                                          |
 | `off_shoulder_outfit/` | oversized off-shoulder dark blue tunic over white camisole, black cropped trousers, dark socks (replaces crop top/skirt/boots) |
-| `a_pose/` | relaxed A-pose, arms held slightly out to the sides (replaces neutral standing) |
+| `a_pose/`              | relaxed A-pose, arms held slightly out to the sides (replaces neutral standing)                                                |
 
 Not extracted: amber eyes and plain background (already baseline traits);
 the tail is not visible in the reference, so no tail delta was defined.
