@@ -1,10 +1,18 @@
-# easy-diffusion-mcp
+# transport-easy-diffusion-mcp
 
-MCP server for [Easy Diffusion](https://github.com/easydiffusion/easydiffusion), in Elixir. Exposes one tool, `generate_image`, proxying to a local Easy Diffusion `/render` API. No authentication — trusted local network only.
+A Model Context Protocol server, written in Elixir, that exposes a local diffusion image server as one image-generation tool.
+
+## What it is for
+
+It forwards each `generate_image` call to the image server's render API and returns the finished batch. It has no authentication, so it belongs on a trusted local network. It reads its settings from the environment, and `.env.example` names them.
+
+## Build and run
 
 ```sh
 mix deps.get
-EASY_DIFFUSION_API_URL=http://localhost:9000 mix run --no-halt
+mix run --no-halt
 ```
 
-MCP endpoint: `http://localhost:5242/mcp` (`PORT` to change). `DEFAULT_MODEL` sets the default `use_stable_diffusion_model`.
+## Licence
+
+The licence is not stated.
